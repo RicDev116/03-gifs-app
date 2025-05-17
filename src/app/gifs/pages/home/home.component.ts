@@ -1,10 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  imports: [],
-  template: `<p>home works!</p>`,
-  styleUrl: './home.component.css',
+  selector: 'gifs-home-page',
+  templateUrl: './home-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
-export class HomeComponent { }
+export class HomePageComponent { }
