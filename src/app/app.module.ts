@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { provideHttpClient } from '@angular/common/http'; // Import HttpClientModule
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,9 +19,11 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     GifsModule,
-    SharedModule
+    SharedModule,
   ],
-  providers: [],
+  providers: [
+    provideHttpClient() // Provide HttpClient
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
